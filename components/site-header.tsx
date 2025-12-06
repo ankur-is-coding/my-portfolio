@@ -5,23 +5,20 @@ import { Button } from "@/components/ui/button";
 
 export function SiteHeader() {
   return (
-    <header className="border-b border-slate-800 bg-slate-950/80">
+    <header className="bg-slate-900 border-b border-slate-700">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
-        <Link
-          href="/"
-          className="font-semibold text-sm md:text-base tracking-tight text-white"
-        >
-          Ankur<span className="text-sky-400">.finance</span>
-        </Link>
+        <div className="text-white font-bold text-sm">
+          HEADER TEST
+        </div>
 
-        <nav className="hidden md:flex gap-4 text-xs md:text-sm text-slate-300">
-          <Link href="/" className="hover:text-sky-400 transition">
+        <nav className="flex gap-4 text-xs text-slate-300">
+          <Link href="/" className="hover:text-sky-400">
             Home
           </Link>
-          <Link href="/projects" className="hover:text-sky-400 transition">
+          <Link href="/projects" className="hover:text-sky-400">
             Projects
           </Link>
-          <Link href="/blog" className="hover:text-sky-400 transition">
+          <Link href="/blog" className="hover:text-sky-400">
             Blog
           </Link>
         </nav>
@@ -33,4 +30,3 @@ export function SiteHeader() {
     </header>
   );
 }
-
